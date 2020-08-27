@@ -5,6 +5,7 @@ import Welcome from "./components/welcome/Welcome";
 import Clock from "./components/clock/Clock";
 import Contact from "./components/contact/Contact";
 import Navigation from "./components/navigation/Navigation";
+import Jeopardy from "./components/jeopardy/Jeopardy";
 import Error from "./components/error/Error";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/welcome/:name" component={Welcome} />
         <Route path="/clock" component={Clock} />
         <Route path="/contact" component={Contact} />
+        <Route path="/jeopardy" component={Jeopardy} />
         <Route component={Error} />
       </Switch>
     </div>
